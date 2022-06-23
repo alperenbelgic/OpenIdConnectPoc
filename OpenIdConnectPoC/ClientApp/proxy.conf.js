@@ -7,12 +7,16 @@ const PROXY_CONFIG = [
   {
     context: [
       "/weatherforecast",
+      "/auth",
+      "/signin",
+      "/values",
    ],
     target: target,
     secure: false,
     headers: {
       Connection: 'Keep-Alive'
-    }
+    },
+    cookieDomainRewrite: "localhost"
   }
 ]
 
